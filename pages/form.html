@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"-->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="icon" type="imeges/png" sizes="40x40" href="imeges/">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <title>Homework</title>
+  <!-- Заголовок -->
+  <h1>Басько Ілля Сергійович</h1>
+  <!-- Зображення -->
+  <img src="../imeges/fon.jpg" alt="">
+  <body>
+    <!-- Форма для введення даних користувача -->
+    <form name="user" action="send.php" method="GET">
+      <hr>
+      <!-- Розділ "Форма" -->
+      <h2>Форма</h2>
+      <br>
+      <!-- Розділ форми для введення особистої інформації -->
+      <fieldset>
+        <legend>Особиста інформація</legend>
+        <!-- Поле для введення імені -->
+        <label for="userName">Ваше ім'я:</label>
+        <input type="text" name="userName" placeholder="Enter your name" id="userName" required>
+        <br>
+        <br>
+        <!-- Поле для введення віку -->
+        <label for="userAge">Твого віку:</label>
+        <input type="number" name="userAge" placeholder="Enter your age" id="userAge" min="1" max="5">
+      </fieldset>
+      <br>
+      <br>
+      <!-- Поле для введення пароля -->
+      <label for="password">Ваш пароль:</label>
+      <input type="password" name="password" placeholder="Enter your password" id="password">
+      <br>
+      <br>
+      <!-- Радіокнопки для вибору статі -->
+      <label for="male">Чоловік</label>
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="female">Жінка</label>
+      <input type="radio" name="gender" value="female" id="female">
+      <br>
+      <br>
+      <!-- Чекбокс для згоди на збереження даних -->
+      <label for="remember">Пам'ятай мене:</label>
+      <input type="checkbox" name="remember" id="remember">
+      <br>
+      <br>
+      <!-- Випадаючий список для вибору міста -->
+      <label for="city">Оберіть своє місто:</label>
+      <select name="city" id="city">
+        <option value="kyiv">Київ</option>
+        <option value="lviv">Львів</option>
+      </select>
+      <br>
+      <br>
+      <!-- Поле для введення повідомлення -->
+      <label for="message">Введіть своє повідомлення:</label>
+      <textarea name="message" id="message"></textarea>
+      <br>
+      <br>
+      <!-- Кнопка для відправки форми -->
+      <input type="submit" name="submit" value="Submit">
+    </form>
+    <br>
+    <hr>
+
+  </body>
+</html>
